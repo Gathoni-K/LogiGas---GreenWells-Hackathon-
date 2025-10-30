@@ -1,0 +1,41 @@
+.footerContent{
+    background-color: rgb(152, 151, 151);
+    color: white;
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 5px;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+.logo .image{
+    width: 70px;
+    border-radius: 50%;
+
+}
+.logo .heading{
+    color: green;
+}
+.footerLinks{
+    display: flex;
+    gap: 20px;
+    text-decoration: underline;
+}
+.footerLinks a:hover{
+    color: blue;
+    transform: translateY(3px);
+    cursor: pointer;
+    
+}

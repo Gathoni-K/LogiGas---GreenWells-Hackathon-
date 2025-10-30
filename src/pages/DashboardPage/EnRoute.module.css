@@ -1,0 +1,13 @@
+.enRoute{
+    box-shadow: 0 12px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 1rem;
+}
+.order{
+    color: rgba(223, 223, 5, 0.916);
+    
+}
+.tally{
+    display: flex;
+    justify-content: flex-end;
+}

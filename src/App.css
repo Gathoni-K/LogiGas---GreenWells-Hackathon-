@@ -1,0 +1,6 @@
+/* this is where styles affecting the whole app are kept */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

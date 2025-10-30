@@ -1,0 +1,24 @@
+.header{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0F2A46;
+    border-radius: 5px;
+    padding: 8px;
+}
+.Logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.appName{
+    color: green;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+.logo{
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}

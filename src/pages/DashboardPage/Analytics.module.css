@@ -1,0 +1,21 @@
+.analytics{
+    border-radius: 0 2px 10px rgba(0,0,0, 0.1);
+    border-bottom: 1px solid #88D54A;
+    background-color: white;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 4px solid #88D54A;
+}
+.distance {
+    color: #0F2A46;
+    margin: 0 0 16px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

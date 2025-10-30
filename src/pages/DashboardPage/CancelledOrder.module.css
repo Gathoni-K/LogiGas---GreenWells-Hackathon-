@@ -1,0 +1,13 @@
+.cancelledOrders{
+    box-shadow: 0 12px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 1rem;
+}
+.order{
+    color: red;
+    
+}
+.tally{
+    display: flex;
+    justify-content: flex-end;
+}
