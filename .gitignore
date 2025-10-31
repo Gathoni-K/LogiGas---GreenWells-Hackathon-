@@ -1,3 +1,13 @@
+# Backend Node modules
+backend/node_modules/
+
+# Frontend Node modules  
+frontend/node_modules/
+
+# Environment variables
+backend/.env
+frontend/.env
+
 # Logs
 logs
 *.log
@@ -7,10 +17,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Build outputs
 node_modules
 dist
 dist-ssr
 *.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
 
 # Editor directories and files
 .vscode/*
