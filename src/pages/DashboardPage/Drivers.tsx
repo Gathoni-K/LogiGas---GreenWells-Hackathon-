@@ -1,8 +1,16 @@
 import styles from './Drivers.module.css';
 import { useState, useEffect } from 'react';
 
+// Add this interface for driver data
+interface Driver {
+    _id: string;
+    name: string;
+    employeeId?: string;
+    status: string;
+}
+
 const Drivers = () => {
-    const [drivers, setDrivers] = useState([]);
+    const [drivers, setDrivers] = useState<Driver[]>([]); // Add type here
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
 
