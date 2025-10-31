@@ -171,15 +171,15 @@ const Map = () => {
             savings: savings
         });
         
-        // You could also send this to analytics, update a dashboard, etc.
+       
     }, []);
 
-    // Another function that uses optimizedRoute
+  
     const updateMapWithOptimizedRoute = useCallback((route: RouteWithLayer) => {
-        // Add markers for optimized route waypoints
+   
         if (mapInstanceRef.current && route.waypoints) {
             route.waypoints.forEach((waypoint, index) => {
-                // In a real app, you'd geocode the address to get coordinates
+               
                 const waypointCoord = {
                     lat: COMPANY_LOCATION.lat + 0.005 * (index + 1),
                     lng: COMPANY_LOCATION.lng + 0.005 * (index + 1)
@@ -193,7 +193,7 @@ const Map = () => {
         }
     }, [COMPANY_LOCATION.lat, COMPANY_LOCATION.lng]);
 
-    // Handle show map click
+  
     const handleShowMapClick = useCallback(() => {
         if (!mapInstanceRef.current) return;
 
@@ -250,15 +250,13 @@ const Map = () => {
                 attribution: '&copy; OpenStreetMap contributors'
             }).addTo(mapInstanceRef.current);
         }
-    }, [COMPANY_LOCATION.lat, COMPANY_LOCATION.lng]); // Added dependencies
+    }, [COMPANY_LOCATION.lat, COMPANY_LOCATION.lng]); 
 
-    // Example of using optimizedRoute in another useEffect
     useEffect(() => {
         if (optimizedRoute) {
             // Do something when optimizedRoute changes
             console.log('Optimized route updated:', optimizedRoute);
             
-            // You could trigger analytics, update parent components, etc.
         }
     }, [optimizedRoute]); // This effect runs whenever optimizedRoute changes
 
@@ -268,7 +266,7 @@ const Map = () => {
             <div id="map" ref={mapRef} className={styles.mapContainer}></div>
             <OptimizeButton onClick={handleOptimizeRoute} disabled={!currentRoute} />
             
-            {/* Actually USING the optimizedRoute and savings in the UI */}
+            
             {optimizedRoute && (
                 <div className={styles.optimizationResults}>
                     <h3>Optimized Route Active</h3>
